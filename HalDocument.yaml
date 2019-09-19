@@ -54,7 +54,7 @@ Resource:
     _links:
       type: object
       title: Hyperlink
-      description: Represents a hyperlink from the cotntaining resource to a URI.
+      description: Represents a hyperlink from the containing resource to a URI.
       additionalProperties:
         oneOf:
         - $ref: '#/components/schemas/Link'
