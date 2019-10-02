@@ -1,0 +1,29 @@
+ProblemDetails:
+  required:
+    - status
+    - detail
+  properties:
+    status:
+      type: integer
+      format: int32
+    detail:
+      type: string
+    title:
+      type: string
+    instance:
+      type: string
+      format: url
+    type: 
+      type: string
+      format: url
+    validationErrors: 
+      type: array
+      items:
+        anyOf:
+          - type: array
+          - type: boolean
+          - type: integer
+          - type: number
+          - type: object
+          - type: string
+  additionalProperties: true
