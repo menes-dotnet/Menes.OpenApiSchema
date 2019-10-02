@@ -1,0 +1,19 @@
+responses:
+  '200':
+    description: Successful operation        
+    content:
+      application/json:
+        schema:
+          $ref: '#/components/schemas/YOURRESPONSETYPEHERE'
+  '304':
+    description: Not modified
+  '400':
+    description: Bad request
+    content:
+      application/json:
+        schema:
+          $ref: '#/components/schemas/ProblemDetails'
+  '403':
+    description: Forbidden
+  '404':
+    description: Not found
