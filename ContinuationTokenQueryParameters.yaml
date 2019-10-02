@@ -1,0 +1,16 @@
+continuationToken:
+  name: continuationToken
+  in: query
+  x-ms-parameter-location: method
+  description: A continuation token for an operation where more data is available
+  required: false
+  schema:
+    type: string
+maxItems:
+  name: maxItems
+  in: query
+  x-ms-parameter-location: method
+  description: The maximum number of items to return in the request. Fewer than this number may be returned.
+  required: false
+  schema:
+    type: integer
