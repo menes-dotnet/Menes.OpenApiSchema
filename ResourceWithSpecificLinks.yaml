@@ -1,0 +1,23 @@
+    SomeCustomResource:
+      allOf:
+        - $ref: '#/components/schemas/Resource'
+        - type: object
+          properties:
+            someCustomProperty:
+              type: string
+            _links:
+              type: object
+              title: Hyperlinks
+              description: Represents hyperlinks from the containing resource to a URI.
+              properties:
+                someCustomRel:
+                  $ref: '#/components/schemas/Link'
+              additionalProperties:
+                oneOf:
+                - $ref: '#/components/schemas/Link'
+                - type: array
+                  items:
+                    $ref: '#/components/schemas/Link'
+                  uniqueItems: true
+                  additionalProperties: false
+          additionalProperties: true
