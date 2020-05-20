@@ -13,6 +13,9 @@ responses:
       application/json:
         schema:
           $ref: '#/components/schemas/ProblemDetails'
+      application/problem+json:
+        schema:
+          $ref: '#/components/schemas/ProblemDetails'
   '403':
     description: Forbidden
   '404':
