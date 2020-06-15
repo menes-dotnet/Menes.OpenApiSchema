@@ -1,8 +1,0 @@
-ifMatch:
-  name: If-Match
-  in: header
-  x-ms-parameter-location: method
-  description: The ETag of the last known version.
-  required: false
-  schema:
-    type: string

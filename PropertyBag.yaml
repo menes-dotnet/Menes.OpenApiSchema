@@ -1,4 +1,0 @@
-# A bag of key value pairs of unschematized data
-
-PropertyBag:
-  type: object

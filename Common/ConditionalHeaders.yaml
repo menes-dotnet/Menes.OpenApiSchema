@@ -1,0 +1,20 @@
+﻿parameters:
+  ifMatch:
+    name: If-Match
+    in: header
+    description: Conditionally execute if the resource's ETAG matches one of the supplied values
+    required: false
+    schema:
+      type: string
+  ifNoneMatch:
+    name: If-None-Match
+    in: header
+    description: Conditionally execute if the resource's ETAG does not match any of the supplied values
+    required: false
+    schema:
+      type: string
+schemas:
+  ETag:
+    type: string
+    format: ETAG
+    description: The ETAG for a response header

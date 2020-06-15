@@ -1,8 +1,0 @@
-tenantId:
-  name: tenantId
-  in: path
-  x-ms-parameter-location: method
-  description: The tenant within which the request should operate
-  required: true
-  schema:
-    type: string
